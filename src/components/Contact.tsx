@@ -1,0 +1,90 @@
+import React from 'react';
+import { MessageSquare, Instagram } from 'lucide-react';
+
+const Contact = () => {
+  return (
+    <section id="contact" className="py-20 bg-gray-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-white mb-4">Join PWK Esports</h2>
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            Ready to take your eFootball skills to the next level? Connect with us through our social channels.
+          </p>
+        </div>
+
+        <div className="max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* WhatsApp */}
+            <div className="bg-black p-8 rounded-xl border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105 text-center">
+              <div className="bg-emerald-600 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <MessageSquare className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">WhatsApp</h3>
+              <p className="text-gray-300 mb-6">
+                Join our WhatsApp group for real-time communication, match coordination, and team updates.
+              </p>
+              <a 
+                href="https://wa.me/your-number" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center space-x-2"
+              >
+                <MessageSquare className="h-5 w-5" />
+                <span>Join WhatsApp</span>
+              </a>
+            </div>
+
+            {/* Instagram */}
+            <div className="bg-black p-8 rounded-xl border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105 text-center">
+              <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <Instagram className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-4">Instagram</h3>
+              <p className="text-gray-300 mb-6">
+                Follow us on Instagram for highlights, behind-the-scenes content, and tournament updates.
+              </p>
+              <a 
+                href="https://instagram.com/pwkesports" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 inline-flex items-center space-x-2"
+              >
+                <Instagram className="h-5 w-5" />
+                <span>Follow Us</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Requirements Box */}
+          <div className="mt-12 bg-black p-8 rounded-xl border border-gray-800">
+            <h3 className="text-2xl font-bold text-white mb-6 text-center">Quick Requirements</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <span>Division 4+ ranking</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <span>Active 15+ hours/week</span>
+                </li>
+              </ul>
+              <ul className="space-y-3 text-gray-300">
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <span>Team player mentality</span>
+                </li>
+                <li className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
+                  <span>WhatsApp required</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
