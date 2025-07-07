@@ -9,7 +9,7 @@ const Header = () => {
     { name: 'Home', href: '#home', icon: Trophy },
     { name: 'About', href: '#about', icon: Users },
     { name: 'Team', href: '#team', icon: Users },
-    { name: 'Rankings', href: '#rankings', icon: BarChart3 },
+    // { name: 'Rankings', href: '#rankings', icon: BarChart3 },
     { name: 'Contact', href: '#contact', icon: Phone },
   ];
 
