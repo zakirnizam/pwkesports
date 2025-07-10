@@ -1,4 +1,3 @@
-import React from 'react';
 import { MessageSquare, Instagram } from 'lucide-react';
 
 const Contact = () => {
@@ -24,7 +23,7 @@ const Contact = () => {
                 Join our WhatsApp group for real-time communication, match coordination, and team updates.
               </p>
               <a 
-                href="https://wa.me/your-number" 
+                href="https://wa.me/919037122605?text=Hey%2C%20could%20you%20please%20add%20me%20to%20the%20PWK%20WhatsApp%20group%20for%20real-time%20communication%2C%20match%20coordination%2C%20and%20team%20updates%3F" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center space-x-2"

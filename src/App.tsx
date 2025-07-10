@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -6,6 +5,7 @@ import Team from './components/Team';
 import Rankings from './components/Rankings';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Achievements from './components/Achievements';
 
 function App() {
   return (
@@ -13,8 +13,9 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Achievements />
       <Team />
-      {/* <Rankings /> */}
+      <Rankings />
       <Contact />
       <Footer />
     </div>

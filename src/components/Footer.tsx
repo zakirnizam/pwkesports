@@ -45,6 +45,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#home" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Home</a></li>
               <li><a href="#about" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">About</a></li>
+              <li><a href="#achievements" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Achievements</a></li>
               <li><a href="#team" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Team</a></li>
               <li><a href="#rankings" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Rankings</a></li>
             </ul>
@@ -55,7 +56,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Community</h3>
             <ul className="space-y-2">
               <li><a href="#contact" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Join Us</a></li>
-              <li><a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">WhatsApp Group</a></li>
+              <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">WhatsApp Group</a></li>
               <li><a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Tournaments</a></li>
               <li><a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Rules & Guidelines</a></li>
             </ul>

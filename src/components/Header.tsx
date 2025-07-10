@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X, Trophy, Users, BarChart3, Phone } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X, Trophy, Users, BarChart3, Info, Phone, Medal } from 'lucide-react';
 import pwkLogo from '../images/pwklogo.jpg'; 
 
 const Header = () => {
@@ -7,9 +7,10 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '#home', icon: Trophy },
-    { name: 'About', href: '#about', icon: Users },
+    { name: 'About', href: '#about', icon: Info },
+    { name: 'Achievements', href: '#achievements', icon: Medal },
     { name: 'Team', href: '#team', icon: Users },
-    // { name: 'Rankings', href: '#rankings', icon: BarChart3 },
+    { name: 'Rankings', href: '#rankings', icon: BarChart3 },
     { name: 'Contact', href: '#contact', icon: Phone },
   ];
 
@@ -17,9 +18,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-sm border-b border-gray-800 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <div className="flex items-center space-x-3">
-            {/* Clan Logo - Replace src with your actual logo */}
             <div className="w-10 h-10 bg-gray-800 border-2 border-emerald-400 rounded-lg flex items-center justify-center overflow-hidden">
               <img 
                 src={pwkLogo} 

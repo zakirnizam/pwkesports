@@ -1,40 +1,39 @@
-import React from 'react';
 import { Crown, Users, Star, Shield, Target, Zap } from 'lucide-react';
 
 const Team = () => {
   const players = [
     {
-      name: "Alex Martinez",
+      name: "Haris",
       role: "Founder",
       image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
       specialty: "Team Leader & Vision"
     },
     {
-      name: "Jordan Kim",
+      name: "Prince",
       role: "Co-Founder",
       image: "https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
       specialty: "Strategy & Operations"
     },
     {
-      name: "Marcus Johnson",
+      name: "Akshay",
       role: "Captain",
       image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
       specialty: "Team Captain & Defender"
     },
     {
-      name: "Sofia Rodriguez",
+      name: "Nizam",
       role: "Manager",
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
       specialty: "Team Management"
     },
     {
-      name: "Chen Wei",
+      name: "Sreenath",
       role: "Coach",
       image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
       specialty: "Training & Development"
     },
     {
-      name: "Isabella Santos",
+      name: "Alex",
       role: "Analyst",
       image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
       specialty: "Performance Analysis"
