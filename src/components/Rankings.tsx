@@ -162,13 +162,15 @@ const Rankings = () => {
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center space-x-4">
-                          <img 
-                            src={player.image} 
-                            alt={player.name}
-                            className="w-12 h-12 rounded-full object-cover border-2 border-gray-700"
-                          />
+                          <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-700 flex-shrink-0">
+                            <img 
+                              src={player.image} 
+                              alt={player.name}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
                           <div>
-                            <div className="text-white font-semibold">{player.name}</div>
+                            <div className="text-white font-semibold text-lg">{player.name}</div>
                           </div>
                         </div>
                       </td>
