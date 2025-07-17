@@ -163,13 +163,15 @@ const Rankings = () => {
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center space-x-4">
-                          <img 
-                            src={player.image} 
-                            alt={player.name}
-                            className="w-12 h-12 rounded-full object-cover border-2 border-gray-700"
-                          />
+                          <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-700 flex-shrink-0">
+                            <img 
+                              src={player.image} 
+                              alt={player.name}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
                           <div>
-                            <div className="text-white font-semibold">{player.name}</div>
+                            <div className="text-white font-semibold text-lg">{player.name}</div>
                           </div>
                         </div>
                       </td>
@@ -185,22 +187,10 @@ const Rankings = () => {
             </table>
           </div>
         </div>
-
-        {/* Season Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-yellow-400 mb-2">100</div>
-            <div className="text-gray-400">Total Players</div>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">925</div>
-            <div className="text-gray-400">Average Rating</div>
-          </div>
-          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-green-400 mb-2">985</div>
-            <div className="text-gray-400">Highest Rating</div>
-          </div>
-        </div>
+        <div className="mt-8 text-center">
+          <p className="text-gray-400 text-sm">
+            Rankings are updated based on player performance in matches.
+          </p>  </div>
       </div>
     </section>
   );
