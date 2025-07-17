@@ -1,6 +1,6 @@
 export { default as pwkLogo } from './pwklogo.jpg';
 export { default as Grizzy } from './Grizzy.jpg';
-export { default as Shiraz } from './shiraz.jpg';
+export { default as Shiraz } from './Shiraz.jpg';
 export { default as Murshid } from './murshid.jpg';
 export { default as Abin } from './abin.jpg';
 export { default as Alex } from './alex.jpg';
