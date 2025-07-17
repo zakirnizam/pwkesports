@@ -183,16 +183,16 @@ const Rankings = () => {
         {/* Season Stats */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-yellow-400 mb-2">100</div>
-            <div className="text-gray-400">Total Players</div>
+            <div className="text-3xl font-bold text-yellow-400 mb-2">985</div>
+            <div className="text-gray-400">Highest Rating</div>
           </div>
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">80+</div>
-            <div className="text-gray-400">Matches Won</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">916</div>
+            <div className="text-gray-400">Average Rating</div>
           </div>
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-green-400 mb-2">10+</div>
-            <div className="text-gray-400">Tournaments</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">20</div>
+            <div className="text-gray-400">Active Players</div>
           </div>
         </div>
       </div>
