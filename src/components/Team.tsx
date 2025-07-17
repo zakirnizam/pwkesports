@@ -1,78 +1,217 @@
-import { Crown, Users, Star, Shield, Target, Zap } from 'lucide-react';
+import { useState } from "react";
+import {
+  Crown,
+  Users,
+  Star,
+  Shield,
+  Target,
+  Zap,
+  Trophy,
+  Award,
+  Gamepad2,
+  RocketIcon,
+} from "lucide-react";
+import { Abhi, Adhi, Alex, Anvar, AthulVok, Febin, Grizzy, Jibin, Murshid, Sheheer, Shiraz, Sreejith, Sulthan, PwkLogo } from "../images";
 
 const Team = () => {
-  const players = [
-    {
-      name: "Haris",
-      role: "Founder",
-      image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      specialty: "Team Leader & Vision"
-    },
-    {
-      name: "Prince",
-      role: "Co-Founder",
-      image: "https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      specialty: "Strategy & Operations"
-    },
-    {
-      name: "Akshay",
-      role: "Captain",
-      image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      specialty: "Team Captain & Defender"
-    },
-    {
-      name: "Nizam",
-      role: "Manager",
-      image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      specialty: "Team Management"
-    },
-    {
-      name: "Sreenath",
-      role: "Coach",
-      image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      specialty: "Training & Development"
-    },
-    {
-      name: "Alex",
-      role: "Analyst",
-      image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-      specialty: "Performance Analysis"
-    }
-  ];
+  const [activeTab, setActiveTab] = useState("Management");
 
-  const getRoleIcon = (role: string) => {
-    switch (role) {
-      case 'Founder': return Crown;
-      case 'Co-Founder': return Crown;
-      case 'Captain': return Shield;
-      case 'Manager': return Users;
-      case 'Coach': return Target;
-      case 'Analyst': return Zap;
-      default: return Star;
+  const teamCategories = {
+    Management: [
+      {
+        name: "Akshay",
+        image: PwkLogo,
+      },
+      {
+        name: "Haris",
+        image: PwkLogo,
+      },
+      {
+        name: "Prince",
+        image: PwkLogo,
+      },
+    ],
+    Leaders: [
+      {
+        name: "Sreenath",
+        image: PwkLogo,
+      },
+      { name: "Sreejith", image: Sreejith },
+      { name: "Hari", image: Sreejith },
+      {
+        name: "Subin",
+        image: PwkLogo,
+      },
+      {
+        name: "Sarath",
+        image: PwkLogo,
+      },
+      { name: "Athul Vok", image: AthulVok },
+      { name: "Athul PD", image: Shiraz },
+      {
+        name: "Zidan",
+        image: PwkLogo,
+      },
+      {
+        name: "Gokul",
+        image: PwkLogo,
+      },
+      {
+        name: "Varun",
+        image: PwkLogo,
+      },
+    ],
+    "Star Player's": [
+      {
+        name: "Anvar",
+        image: Anvar
+      },
+      {
+        name: "Febin",
+        image: Febin ,
+      },
+      {
+        name: "Alex",
+        image: Alex
+      },
+      {
+        name: "Sulthan",
+        image: Sulthan      },
+      {
+        name: "Grizzy",
+        image: Grizzy
+      },
+      {
+        name: "Abhi",
+        image: Abhi
+      },
+      {
+        name: "Adhi",
+        image: Adhi
+      },
+      {
+        name: "Shiraz",
+        image: Shiraz
+      },
+      {
+        name: "Murshid",
+        image:Murshid
+      },
+      {
+        name: "Jibin",
+        image: Jibin
+      },
+      {
+        name: "Sheheer",
+        image: Sheheer
+      },
+      {
+        name: "Unni",
+        image: PwkLogo,
+      },
+    ],
+    "Next Gen": [
+      {
+        name: "Nizam",
+        image: PwkLogo,
+      },
+      {
+        name: "Juju",
+        image: PwkLogo,
+      },
+      {
+        name: "Abin",
+        image: PwkLogo,
+      },
+      {
+        name: "Bumble bee",
+        image: PwkLogo,
+      },
+    ],
+    Pioneers: [
+      {
+        name: "Kose",
+        image: PwkLogo,
+      },
+      {
+        name: "Achooz",
+        image: PwkLogo,
+      },
+      {
+        name: "Ebbie",
+        image: PwkLogo,
+      },
+      {
+        name: "Manu",
+        image: PwkLogo,
+      },
+      {
+        name: "Ajin",
+        image: PwkLogo,
+      },
+      {
+        name: "Neeraj",
+        image: PwkLogo,
+      },
+      {
+        name: "Mr. Viz",
+        image: PwkLogo,
+      },
+      {
+        name: "Shyam",
+        image: PwkLogo,
+      },
+    ],
+  };
+
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case "Management":
+        return Users;
+      case "Leaders":
+        return Crown;
+      case "Star Player's":
+        return Gamepad2;
+      case "Next Gen":
+        return RocketIcon;
+      case "Pioneers":
+        return Award;
+      default:
+        return Star;
     }
   };
 
-  const getRoleColor = (role: string) => {
-    switch (role) {
-      case 'Founder': return 'text-yellow-400';
-      case 'Co-Founder': return 'text-yellow-300';
-      case 'Captain': return 'text-emerald-400';
-      case 'Manager': return 'text-purple-400';
-      case 'Coach': return 'text-blue-400';
-      case 'Analyst': return 'text-orange-400';
-      default: return 'text-gray-400';
+  const getCategoryColor = (category: string) => {
+    switch (category) {
+      case "Management":
+        return "text-purple-400 border-purple-400 bg-purple-400/10";
+      case "Leaders":
+        return "text-yellow-400 border-yellow-400 bg-yellow-400/10";
+      case "Star Player's":
+        return "text-emerald-400 border-emerald-400 bg-emerald-400/10";
+      case "Next Gen":
+        return "text-blue-400 border-blue-400 bg-blue-400/10";
+      case "Pioneers":
+        return "text-orange-400 border-orange-400 bg-orange-400/10";
+      default:
+        return "text-gray-400 border-gray-400 bg-gray-400/10";
     }
   };
 
-  const getRoleBackground = (role: string) => {
-    switch (role) {
-      case 'Founder': return 'bg-yellow-400/20 border-yellow-400/30';
-      case 'Co-Founder': return 'bg-yellow-300/20 border-yellow-300/30';
-      case 'Captain': return 'bg-emerald-400/20 border-emerald-400/30';
-      case 'Manager': return 'bg-purple-400/20 border-purple-400/30';
-      case 'Coach': return 'bg-blue-400/20 border-blue-400/30';
-      case 'Analyst': return 'bg-orange-400/20 border-orange-400/30';
-      default: return 'bg-gray-400/20 border-gray-400/30';
+  const getActiveColor = (category: string) => {
+    switch (category) {
+      case "Management":
+        return "bg-purple-600 text-white border-purple-600";
+      case "Leaders":
+        return "bg-yellow-600 text-white border-yellow-600";
+      case "Star Player's":
+        return "bg-emerald-600 text-white border-emerald-600";
+      case "Next Gen":
+        return "bg-blue-600 text-white border-blue-600";
+      case "Pioneers":
+        return "bg-orange-600 text-white border-orange-600";
+      default:
+        return "bg-gray-600 text-white border-gray-600";
     }
   };
 
@@ -82,47 +221,70 @@ const Team = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Our Team</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Meet the leadership and core members who drive PWK Esports to excellence in competitive eFootball.
+            Meet the diverse talent that drives PWK Esports to excellence across
+            all levels of competitive eFootball.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {players.map((player, index) => {
-            const RoleIcon = getRoleIcon(player.role);
-            return (
-              <div key={index} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105">
-                <div className="relative">
-                  <img 
-                    src={player.image} 
-                    alt={player.name}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm rounded-full p-2">
-                    <RoleIcon className={`h-5 w-5 ${getRoleColor(player.role)}`} />
-                  </div>
-                  {(player.role === 'Founder' || player.role === 'Co-Founder') && (
-                    <div className="absolute top-4 right-4 bg-yellow-500 rounded-full p-1">
-                      <Crown className="h-4 w-4 text-white" />
-                    </div>
-                  )}
-                </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{player.name}</h3>
-                  <div className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 border ${getRoleBackground(player.role)} ${getRoleColor(player.role)}`}>
-                    {player.role}
-                  </div>
-                  <p className="text-gray-400 text-sm">{player.specialty}</p>
-                </div>
-              </div>
-            );
-          })}
+        {/* Tab Navigation */}
+        <div className="mb-12">
+          <div className="flex flex-wrap justify-center gap-2 mb-8">
+            {Object.keys(teamCategories).map((category) => {
+              const CategoryIcon = getCategoryIcon(category);
+              const isActive = activeTab === category;
+
+              return (
+                <button
+                  key={category}
+                  onClick={() => setActiveTab(category)}
+                  className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 border-2 flex items-center space-x-2 ${
+                    isActive
+                      ? getActiveColor(category)
+                      : `${getCategoryColor(category)} hover:scale-105`
+                  }`}
+                >
+                  <CategoryIcon className="h-5 w-5" />
+                  <span>{category}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <div className="text-center mt-12">
-          <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-            Join Our Team
-          </button>
+        {/* Team Members Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {teamCategories[activeTab as keyof typeof teamCategories].map(
+            (player, index) => {
+              const CategoryIcon = getCategoryIcon(activeTab);
+              return (
+                <div
+                  key={index}
+                  className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105"
+                >
+                  <div className="relative">
+                    <img
+                      src={player.image}
+                      alt={player.name}
+                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm rounded-full p-2">
+                      <CategoryIcon
+                        className={`h-5 w-5 ${
+                          getCategoryColor(activeTab).split(" ")[0]
+                        }`}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-bold text-white">
+                      {player.name}
+                    </h3>
+                  </div>
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
