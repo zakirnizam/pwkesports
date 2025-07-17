@@ -145,7 +145,6 @@ const Rankings = () => {
                 <tr>
                   <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Rank</th>
                   <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Player</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-gray-300">Rating</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-800">
@@ -173,11 +172,6 @@ const Rankings = () => {
                           </div>
                         </div>
                       </td>
-                      <td className="px-6 py-4 text-center">
-                        <span className={`font-bold text-xl ${getRatingColor(player.rating)}`}>
-                          {player.rating}
-                        </span>
-                      </td>
                     </tr>
                   );
                 })}
@@ -193,12 +187,12 @@ const Rankings = () => {
             <div className="text-gray-400">Total Players</div>
           </div>
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-emerald-400 mb-2">925</div>
-            <div className="text-gray-400">Average Rating</div>
+            <div className="text-3xl font-bold text-emerald-400 mb-2">80+</div>
+            <div className="text-gray-400">Matches Won</div>
           </div>
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-green-400 mb-2">985</div>
-            <div className="text-gray-400">Highest Rating</div>
+            <div className="text-3xl font-bold text-green-400 mb-2">10+</div>
+            <div className="text-gray-400">Tournaments</div>
           </div>
         </div>
       </div>
