@@ -214,17 +214,16 @@ const Team = () => {
           {teamCategories[activeTab as keyof typeof teamCategories].map((player, index) => {
             const CategoryIcon = getCategoryIcon(activeTab);
             return (
-              <div key={index} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105 group">
+              <div key={index} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105">
                 <div className="relative">
                   <img 
                     src={player.image} 
                     alt={player.name}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm rounded-full p-2">
                     <CategoryIcon className={`h-5 w-5 ${getCategoryColor(activeTab).split(' ')[0]}`} />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 </div>
                 
                 <div className="p-6 text-center">
