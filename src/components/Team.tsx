@@ -7,124 +7,136 @@ const Team = () => {
   const teamCategories = {
     Management: [
       {
-        name: "Haris",
-        role: "Founder & CEO",
-        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Team Vision & Strategy",
-        achievements: "Founded PWK Esports in 2018"
+        name: "AKSHAY",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Nizam",
-        role: "Manager",
-        image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Operations & Development",
-        achievements: "Led 15+ successful tournaments"
+        name: "HARIS",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Sreenath",
-        role: "Head Coach",
-        image: "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Training & Development",
-        achievements: "Improved team performance by 40%"
+        name: "PRINCE",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       }
     ],
     Leaders: [
       {
-        name: "Prince",
-        role: "Co-Founder",
-        image: "https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Strategic Leadership",
-        achievements: "Co-founded PWK Esports"
+        name: "Sreenath",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Akshay",
-        role: "Team Captain",
-        image: "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Team Coordination",
-        achievements: "Led team to 3 championship wins"
+        name: "Sreejith",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Alex",
-        role: "Vice Captain",
-        image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Performance Analysis",
-        achievements: "Strategic mastermind behind victories"
+        name: "Hari",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Subin",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Sarath",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Athul Vok",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Athul PD",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Zidan",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Gokul",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Varun",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       }
     ],
     "Star Player's": [
       {
+        name: "Anvar",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Febin",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Alex",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Sulthan",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
         name: "Grizzy",
-        role: "Top Striker",
-        image: "https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Offensive Gameplay",
-        achievements: "Rank #1 with 985 rating"
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Abhi",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Adhi",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
         name: "Shiraz",
-        role: "Elite Midfielder",
-        image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Playmaking & Control",
-        achievements: "Rank #2 with 978 rating"
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
         name: "Murshid",
-        role: "Defensive Specialist",
-        image: "https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Defense & Tactics",
-        achievements: "Rank #3 with 972 rating"
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Abin",
-        role: "Versatile Player",
-        image: "https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "All-Round Excellence",
-        achievements: "Rank #4 with 968 rating"
+        name: "Jibin",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Sheheer",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
+      },
+      {
+        name: "Unni",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       }
     ],
     "Next Gen": [
       {
         name: "Sohal",
-        role: "Rising Star",
-        image: "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Emerging Talent",
-        achievements: "Rank #5 with 965 rating"
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Febin",
-        role: "Young Prodigy",
-        image: "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Future Champion",
-        achievements: "Rank #6 with 962 rating"
+        name: "Alen",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Sheheer",
-        role: "Upcoming Talent",
-        image: "https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Rapid Improvement",
-        achievements: "Rank #7 with 958 rating"
+        name: "Rizwan",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       }
     ],
     Pioneers: [
       {
-        name: "Abhi",
-        role: "Veteran Player",
-        image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Experience & Wisdom",
-        achievements: "Original founding member"
+        name: "Abin",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Anvar",
-        role: "Legacy Player",
-        image: "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Mentorship",
-        achievements: "5+ years with PWK"
+        name: "Asaf",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       },
       {
-        name: "Sreejith",
-        role: "Foundation Member",
-        image: "https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1",
-        specialty: "Team Building",
-        achievements: "Helped establish clan culture"
+        name: "Mirfash",
+        image: "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&dpr=1"
       }
     ]
   };
@@ -198,7 +210,7 @@ const Team = () => {
         </div>
 
         {/* Team Members Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {teamCategories[activeTab as keyof typeof teamCategories].map((player, index) => {
             const CategoryIcon = getCategoryIcon(activeTab);
             return (
@@ -215,13 +227,8 @@ const Team = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2">{player.name}</h3>
-                  <div className={`inline-block px-3 py-1 rounded-full text-sm font-semibold mb-3 border ${getCategoryColor(activeTab)}`}>
-                    {player.role}
-                  </div>
-                  <p className="text-gray-400 text-sm mb-2">{player.specialty}</p>
-                  <p className="text-emerald-400 text-xs font-medium">{player.achievements}</p>
+                <div className="p-6 text-center">
+                  <h3 className="text-xl font-bold text-white">{player.name}</h3>
                 </div>
               </div>
             );
@@ -237,11 +244,13 @@ const Team = () => {
             <div className="text-gray-400">Members in {activeTab}</div>
           </div>
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">25+</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">
+              {Object.values(teamCategories).reduce((total, category) => total + category.length, 0)}
+            </div>
             <div className="text-gray-400">Total Team Members</div>
           </div>
           <div className="bg-gray-900 p-6 rounded-xl border border-gray-800 text-center">
-            <div className="text-3xl font-bold text-yellow-400 mb-2">6</div>
+            <div className="text-3xl font-bold text-yellow-400 mb-2">5</div>
             <div className="text-gray-400">Team Categories</div>
           </div>
         </div>
