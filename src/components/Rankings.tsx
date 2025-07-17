@@ -145,7 +145,6 @@ const Rankings = () => {
                 <tr>
                   <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Rank</th>
                   <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Player</th>
-                  <th className="px-6 py-4 text-center text-sm font-semibold text-gray-300">Rating</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-800">
@@ -174,11 +173,6 @@ const Rankings = () => {
                             <div className="text-white font-semibold text-lg">{player.name}</div>
                           </div>
                         </div>
-                      </td>
-                      <td className="px-6 py-4 text-center">
-                        <span className={`font-bold text-xl ${getRatingColor(player.rating)}`}>
-                          {player.rating}
-                        </span>
                       </td>
                     </tr>
                   );
