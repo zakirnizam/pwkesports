@@ -1,32 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="src/images/Pwklogo.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>PWK Esports</title>
-    <meta name="description" content="Join PWK Esports, the premier eFootball clan. Compete at the highest level with skilled players and dominate the virtual pitch." />
-    <meta name="keywords" content="PWK Esports, eFootball, football clan, gaming, esports,kerala pes,pes community kerala, Kerala, India, competitive gaming, online tournaments, football team, zakir nizam, pwk kerala, kerala efootabll clan,best efootball clan in kerala ,luxy pwk ,vok pwk, Adhi pwk, ,pwk logo ,pwk official, pwk epsorts, kerala efootball community, " />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pwkesports.netlify.app/" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Join PWK Esports, the premier eFootball clan based in Kerala, India. Compete at the highest level with skilled players and dominate the virtual pitch."
+    />
+    <meta
+      name="keywords"
+      content="PWK Esports, eFootball, football clan, gaming, esports, Kerala PES, PES community Kerala, Kerala, India, competitive gaming, online tournaments, football team, Zakir Nizam, PWK Kerala, Kerala eFootball clan, best eFootball clan in Kerala, Luxy PWK, Vok PWK, Adhi PWK, PWK logo, PWK official, PWK esports, Kerala eFootball community"
+    />
+
+    <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:title" content="PWK Esports - eFootball Clan" />
-    <meta property="og:description" content="Join PWK Esports, the premier eFootball clan. Compete at the highest level with skilled players and dominate the virtual pitch." />
-    <meta property="og:image" content="src/images/Pwklogo.jpg" />
+    <meta
+      property="og:description"
+      content="Join PWK Esports, the premier eFootball clan based in Kerala. Play competitively and dominate the virtual football pitch."
+    />
+    <meta
+      property="og:image"
+      content="https://pwkesports.netlify.app/src/images/Pwklogo.jpg"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://pwkesports.netlify.app/" />
+
+    <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="PWK Esports - eFootball Clan" />
-    <meta name="twitter:description" content="Join PWK Esports, the premier eFootball clan. Compete at the highest level with skilled players and dominate the virtual pitch." />
-    <meta name="twitter:image" content="src/images/Pwklogo.jpg" />
+    <meta
+      name="twitter:description"
+      content="Join PWK Esports, the premier eFootball clan based in Kerala. Play competitively and dominate the virtual football pitch."
+    />
+    <meta
+      name="twitter:image"
+      content="https://pwkesports.netlify.app/src/images/Pwklogo.jpg"
+    />
+
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LGT4Y73ZH"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6LGT4Y73ZH"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-6LGT4Y73ZH');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-6LGT4Y73ZH");
+    </script>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PWK Esports",
+        "url": "https://pwkesports.netlify.app",
+        "logo": "https://pwkesports.netlify.app/src/images/Pwklogo.jpg",
+        "description": "PWK Esports is a competitive eFootball clan based in Kerala, India.",
+        "sameAs": [
+          "https://instagram.com/pwkesports",
+          "https://twitter.com/pwkesports"
+        ]
+      }
     </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const scrolled =
+          (window.scrollY + window.innerHeight) / document.body.scrollHeight;
+        if (scrolled > 0.5 && !window.scrollEventSent) {
+          gtag("event", "scroll_50_percent", {
+            event_category: "scroll",
+            event_label: "User scrolled 50%",
+            value: 50,
+          });
+          window.scrollEventSent = true; // ensure it triggers only once
+        }
+      });
+    </script>
   </body>
 </html>
