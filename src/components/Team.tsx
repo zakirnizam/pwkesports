@@ -8,6 +8,7 @@ import {
   Award,
   RocketIcon,
 } from "lucide-react";
+import ImageWithFallback from './ImageWithFallback';
 
 import {
   Abhi,
@@ -201,7 +202,7 @@ const Team = () => {
                   className="bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-emerald-400 transition-all duration-300 hover:transform hover:scale-105"
                 >
                   <div className="relative">
-                    <img
+                    <ImageWithFallback
                       src={player.image}
                       alt={player.name}
                       className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
