@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, Trophy, Users, BarChart3, Info, Phone, Medal } from 'lucide-react';
-import pwkLogo from '../images/pwklogo.jpg'; 
+import pwkLogo from '../images/pwklogo.jpg';
+import ImageWithFallback from './ImageWithFallback';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gray-800 border-2 border-emerald-400 rounded-lg flex items-center justify-center overflow-hidden">
-              <img 
+              <ImageWithFallback
                 src={pwkLogo} 
                 alt="PWK Esports Logo"
                 className="w-full h-full object-cover"

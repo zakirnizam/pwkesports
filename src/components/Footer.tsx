@@ -1,5 +1,6 @@
 import { MessageSquare, Instagram } from 'lucide-react';
-import pwkLogo from '../images/pwklogo.jpg'; 
+import pwkLogo from '../images/pwklogo.jpg';
+import ImageWithFallback from './ImageWithFallback';
 
 const phoneNumber = "919037122605";
 const message = "Hi! I’m an active eFootball player looking to join a competitive clan. Is PWK eSports recruiting new players?";
@@ -18,7 +19,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-4">
               {/* Clan Logo */}
               <div className="w-10 h-10 bg-gray-800 border-2 border-emerald-400 rounded-lg flex items-center justify-center overflow-hidden">
-                <img 
+                <ImageWithFallback
                   src={pwkLogo} 
                   alt="PWK Esports Logo"
                   className="w-full h-full object-cover"

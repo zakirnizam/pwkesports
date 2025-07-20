@@ -1,5 +1,6 @@
-import { Users, Target, ShieldHalf } from "lucide-react";
-import pwkLogo from "../images/pwklogo.jpg"; // Adjust the path as necessary
+import { Users, ShieldHalf } from "lucide-react";
+import pwkLogo from "../images/pwklogo.jpg";
+import ImageWithFallback from './ImageWithFallback';
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="pt-28 sm:pt-32 mb-8">
           <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-6 bg-gray-800 border-4 border-emerald-400 rounded-2xl flex items-center justify-center overflow-hidden shadow-2xl">
-            <img
+            <ImageWithFallback
               src={pwkLogo}
               alt="PWK Esports Logo"
               className="w-full h-full object-contain min-w-0 min-h-0"

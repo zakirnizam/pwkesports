@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Trophy, Medal, Award, Crown, BarChart3 } from 'lucide-react';
-import { Abhi, Abin, Adhi, Alen, Alex, Anvar, Asaf, AthulVok, Febin, Grizzy, Jibin, Mirfash, Murshid, Prince, Rizwan, Sheheer, Shiraz, Sohal, Sreejith, Sulthan } from '../images'; // Adjust the import path as necessary
+import { Abhi, Abin, Adhi, Alen, Alex, Anvar, Asaf, AthulVok, Febin, Grizzy, Jibin, Mirfash, Murshid, Prince, Rizwan, Sheheer, Shiraz, Sohal, Sreejith, Sulthan } from '../images';
+import ImageWithFallback from './ImageWithFallback';
 
 const Rankings = () => {
   const [selectedGroup, setSelectedGroup] = useState(1);
@@ -43,12 +44,12 @@ const Rankings = () => {
     return 'text-gray-400';
   };
 
-  const getRatingColor = (rating: number) => {
-    if (rating >= 950) return 'text-yellow-400';
-    if (rating >= 900) return 'text-emerald-400';
-    if (rating >= 850) return 'text-green-400';
-    return 'text-gray-400';
-  };
+  // const getRatingColor = (rating: number) => {
+  //   if (rating >= 950) return 'text-yellow-400';
+  //   if (rating >= 900) return 'text-emerald-400';
+  //   if (rating >= 850) return 'text-green-400';
+  //   return 'text-gray-400';
+  // };
 
   const getGroupRankings = (groupNumber: number) => {
     const startIndex = (groupNumber - 1) * 10;
@@ -132,7 +133,7 @@ const Rankings = () => {
                         <td className="px-6 py-4">
                           <div className="flex items-center space-x-4">
                             <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-700 flex-shrink-0">
-                              <img 
+                              <ImageWithFallback
                                 src={player.image} 
                                 alt={player.name}
                                 className="w-full h-full object-cover"
