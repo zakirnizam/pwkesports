@@ -53,33 +53,6 @@ const Contact = () => {
               </a>
             </div>
           </div>
-
-          {/* Requirements Box */}
-          <div className="mt-12 bg-black p-8 rounded-xl border border-gray-800">
-            <h3 className="text-2xl font-bold text-white mb-6 text-center">Quick Requirements</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>Division 4+ ranking</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>Active 15+ hours/week</span>
-                </li>
-              </ul>
-              <ul className="space-y-3 text-gray-300">
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>Team player mentality</span>
-                </li>
-                <li className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>WhatsApp required</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>

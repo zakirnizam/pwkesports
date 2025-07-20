@@ -20,27 +20,36 @@ const About = () => {
             </p>
           </div>
 
-          <div className="bg-black p-8 rounded-xl border border-gray-800">
-            <h3 className="text-2xl font-bold text-white mb-6">Clan Requirements</h3>
-            <ul className="space-y-4 text-gray-300">
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
-                <span>Minimum Division 3 ranking in eFootball</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
-                <span>Active participation in clan tournaments</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
-                <span>Positive attitude and team-first mentality</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
-                <span>WhatsApp for communication and coordination</span>
-              </li>
-            </ul>
-          </div>
+<div className="bg-black p-8 rounded-xl border border-gray-800">
+  <h3 className="text-2xl font-bold text-white mb-6">Minimum Requirements</h3>
+  <ul className="space-y-4 text-gray-300">
+    <li className="flex items-start space-x-3">
+      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
+      <span>Minimum Division 1 ranking in eFootball league</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
+      <span>Consistent online activity and availability for matches</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
+      <span>Active participation in clan events and tournaments</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
+      <span>Respect towards teammates and opponents</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
+      <span>Team-first mindset with willingness to learn and improve</span>
+    </li>
+    <li className="flex items-start space-x-3">
+      <div className="w-2 h-2 bg-emerald-400 rounded-full mt-2"></div>
+      <span>WhatsApp for clan communication and updates</span>
+    </li>
+  </ul>
+</div>
+
         </div>
       </div>
     </section>

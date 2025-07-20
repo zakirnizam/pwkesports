@@ -3,164 +3,101 @@ import {
   Crown,
   Users,
   Star,
-  Shield,
-  Target,
-  Zap,
+  Gamepad2,
   Trophy,
   Award,
-  Gamepad2,
   RocketIcon,
 } from "lucide-react";
-import { Abhi, Adhi, Alex, Anvar, AthulVok, Febin, Grizzy, Jibin, Murshid, Sheheer, Shiraz, Sreejith, Sulthan, PwkLogo } from "../images";
+
+import {
+  Abhi,
+  Adhi,
+  Alex,
+  Anvar,
+  AthulVok,
+  Febin,
+  Grizzy,
+  Jibin,
+  Murshid,
+  Sheheer,
+  Shiraz,
+  Sreejith,
+  Sulthan,
+  PwkLogo,
+  AthulPD,
+  Unni,
+  Juju,
+  Abin,
+  Bee,
+  Ebbie,
+  Neeraj,
+  Subin,
+  Hari,
+  Sarath,
+  Zidan,
+  Gokul,
+  Varun,
+  Kose,
+  Ajin,
+  Manu,
+  Viz,
+  Acchuz,
+  Haris,
+  Akshay,
+  Prince,
+  Nizam,
+} from "../images";
 
 const Team = () => {
   const [activeTab, setActiveTab] = useState("Management");
 
   const teamCategories = {
     Management: [
-      {
-        name: "Akshay",
-        image: PwkLogo,
-      },
-      {
-        name: "Haris",
-        image: PwkLogo,
-      },
-      {
-        name: "Prince",
-        image: PwkLogo,
-      },
+      { name: "Akshay", image: Akshay },
+      { name: "Haris", image: Haris },
+      { name: "Prince", image: Prince },
     ],
     Leaders: [
-      {
-        name: "Sreenath",
-        image: PwkLogo,
-      },
+      { name: "Subin", image: Subin },
+      { name: "Sreenath", image: PwkLogo },
       { name: "Sreejith", image: Sreejith },
-      { name: "Hari", image: Sreejith },
-      {
-        name: "Subin",
-        image: PwkLogo,
-      },
-      {
-        name: "Sarath",
-        image: PwkLogo,
-      },
+      { name: "Hari", image: Hari },
+      { name: "Sarath", image: Sarath },
       { name: "Athul Vok", image: AthulVok },
-      { name: "Athul PD", image: Shiraz },
-      {
-        name: "Zidan",
-        image: PwkLogo,
-      },
-      {
-        name: "Gokul",
-        image: PwkLogo,
-      },
-      {
-        name: "Varun",
-        image: PwkLogo,
-      },
+      { name: "Athul PD", image: AthulPD },
+      { name: "Zidan", image: Zidan },
+      { name: "Gokul", image: Gokul },
+      { name: "Varun", image: Varun },
     ],
     "Star Player's": [
-      {
-        name: "Anvar",
-        image: Anvar
-      },
-      {
-        name: "Febin",
-        image: Febin ,
-      },
-      {
-        name: "Alex",
-        image: Alex
-      },
-      {
-        name: "Sulthan",
-        image: Sulthan      },
-      {
-        name: "Grizzy",
-        image: Grizzy
-      },
-      {
-        name: "Abhi",
-        image: Abhi
-      },
-      {
-        name: "Adhi",
-        image: Adhi
-      },
-      {
-        name: "Shiraz",
-        image: Shiraz
-      },
-      {
-        name: "Murshid",
-        image:Murshid
-      },
-      {
-        name: "Jibin",
-        image: Jibin
-      },
-      {
-        name: "Sheheer",
-        image: Sheheer
-      },
-      {
-        name: "Unni",
-        image: PwkLogo,
-      },
+      { name: "Anvar", image: Anvar },
+      { name: "Febin", image: Febin },
+      { name: "Alex", image: Alex },
+      { name: "Sulthan", image: Sulthan },
+      { name: "Grizzy", image: Grizzy },
+      { name: "Abhi", image: Abhi },
+      { name: "Adhi", image: Adhi },
+      { name: "Shiraz", image: Shiraz },
+      { name: "Murshid", image: Murshid },
+      { name: "Jibin", image: Jibin },
+      { name: "Sheheer", image: Sheheer },
+      { name: "Unni", image: Unni },
     ],
     "Next Gen": [
-      {
-        name: "Nizam",
-        image: PwkLogo,
-      },
-      {
-        name: "Juju",
-        image: PwkLogo,
-      },
-      {
-        name: "Abin",
-        image: PwkLogo,
-      },
-      {
-        name: "Bumble bee",
-        image: PwkLogo,
-      },
+      { name: "Nizam", image: Nizam },
+      { name: "Juju", image: Juju },
+      { name: "Abin", image: Abin },
+      { name: "Bumble bee", image: Bee },
     ],
     Pioneers: [
-      {
-        name: "Kose",
-        image: PwkLogo,
-      },
-      {
-        name: "Achooz",
-        image: PwkLogo,
-      },
-      {
-        name: "Ebbie",
-        image: PwkLogo,
-      },
-      {
-        name: "Manu",
-        image: PwkLogo,
-      },
-      {
-        name: "Ajin",
-        image: PwkLogo,
-      },
-      {
-        name: "Neeraj",
-        image: PwkLogo,
-      },
-      {
-        name: "Mr. Viz",
-        image: PwkLogo,
-      },
-      {
-        name: "Shyam",
-        image: PwkLogo,
-      },
+      { name: "Kose", image: Kose },
+      { name: "Achooz", image: Acchuz },
+      { name: "Ebbie", image: Ebbie },
+      { name: "Manu", image: Manu },
+      { name: "Ajin", image: Ajin },
+      { name: "Neeraj", image: Neeraj },
+      { name: "Mr. Viz", image: Viz },
+      { name: "Shyam", image: PwkLogo },
     ],
   };
 
@@ -275,7 +212,6 @@ const Team = () => {
                       />
                     </div>
                   </div>
-
                   <div className="p-6 text-center">
                     <h3 className="text-xl font-bold text-white">
                       {player.name}

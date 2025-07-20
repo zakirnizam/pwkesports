@@ -67,16 +67,12 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
             <div className="space-y-3">
               <div className="text-gray-400 text-sm">
-                <p className="font-medium text-white">WhatsApp</p>
-                <p>Join our group chat</p>
-              </div>
-              <div className="text-gray-400 text-sm">
                 <p className="font-medium text-white">Instagram</p>
                 <p>@pwkesports</p>
               </div>
               <div className="text-gray-400 text-sm">
                 <p className="font-medium text-white">Recruitment</p>
-                <p>Always open</p>
+                <p>Opens Soon</p>
               </div>
             </div>
           </div>
