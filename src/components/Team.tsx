@@ -47,6 +47,7 @@ import {
   Prince,
   Nizam,
   Sreenath,
+  Syam,
 } from "../images";
 
 const Team = () => {
@@ -98,7 +99,7 @@ const Team = () => {
       { name: "Ajin", image: Ajin },
       { name: "Neeraj", image: Neeraj },
       { name: "Mr. Viz", image: Viz },
-      { name: "Shyam", image: PwkLogo },
+      { name: "Shyam", image: Syam },
     ],
   };
 

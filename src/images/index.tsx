@@ -40,4 +40,5 @@ export { default as Akshay } from './Akshay.jpg';
 export { default as Acchuz } from './Acchooz.jpg';
 export { default as Nizam } from './Nizam.jpg';
 export { default as Sreenath } from './Sreenath.png';
+export { default as Syam } from './Syam.jpg';
 
