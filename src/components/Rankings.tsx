@@ -27,46 +27,6 @@ const Rankings = () => {
   { rank: 18, name: 'Alex', rating: 925, image: Alex },
   { rank: 19, name: 'Prince', rating: 922, image: Prince },
   { rank: 20, name: 'Mirfash', rating: 919, image: Mirfash },
-  // ...Array.from({ length: 80 }, (_, i) => {
-  //     const rank = i + 21;
-  //     const names = [
-  //       'James Wilson', 'Sarah Lee', 'Michael Chang', 'Anna Rodriguez', 'Kevin Park',
-  //       'Lisa Thompson', 'Daniel Kim', 'Rachel Martinez', 'Tyler Johnson', 'Ashley Chen',
-  //       'Brandon Lee', 'Jessica Wang', 'Andrew Davis', 'Samantha Brown', 'Justin Garcia',
-  //       'Amanda Miller', 'Christopher Wilson', 'Nicole Anderson', 'Matthew Taylor', 'Stephanie Thomas',
-  //       'Joshua Jackson', 'Michelle White', 'Ryan Harris', 'Jennifer Martin', 'Nicholas Thompson',
-  //       'Kimberly Garcia', 'Anthony Martinez', 'Elizabeth Robinson', 'Jacob Clark', 'Melissa Rodriguez',
-  //       'William Lewis', 'Amy Lee', 'Alexander Walker', 'Laura Hall', 'Benjamin Allen',
-  //       'Rebecca Young', 'Samuel Hernandez', 'Sharon King', 'Joseph Wright', 'Donna Lopez',
-  //       'Nathan Hill', 'Carol Scott', 'Zachary Green', 'Ruth Adams', 'Aaron Baker',
-  //       'Helen Gonzalez', 'Jose Nelson', 'Maria Carter', 'Adam Mitchell', 'Sandra Perez',
-  //       'Eric Roberts', 'Betty Turner', 'Brian Phillips', 'Dorothy Campbell', 'Sean Parker',
-  //       'Lisa Evans', 'Carl Edwards', 'Nancy Collins', 'Keith Stewart', 'Karen Sanchez',
-  //       'Patrick Morris', 'Susan Rogers', 'Jeremy Reed', 'Linda Cook', 'Marcus Bailey',
-  //       'Deborah Rivera', 'Victor Cooper', 'Barbara Richardson', 'Gabriel Cox', 'Julie Ward',
-  //       'Isaac Torres', 'Christina Peterson', 'Luke Gray', 'Frances Ramirez', 'Mason James',
-  //       'Diana Watson', 'Owen Brooks', 'Marie Kelly', 'Caleb Sanders', 'Janet Price'
-  //     ];
-  //     const images = [
-  //       'https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1674752/pexels-photo-1674752.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1',
-  //       'https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1'
-  //     ];
-      
-  //     return {
-  //       rank,
-  //       name: names[(rank - 21) % names.length],
-  //       rating: Math.max(800, 916 - (rank - 21) * 2),
-  //       image: images[(rank - 21) % images.length],
-  //     };
-  //   })
   ];
   
   const getRankIcon = (rank: number) => {
@@ -104,6 +64,7 @@ const Rankings = () => {
   };
 
   const groups = Array.from({ length: 10 }, (_, i) => i + 1); // Show all groups 1-10 (ranks 1-100)
+
 
   return (
     <section id="rankings" className="py-20 bg-black">
