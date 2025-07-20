@@ -93,10 +93,17 @@ const Rankings = () => {
   const getGroupRankings = (groupNumber: number) => {
     const startIndex = (groupNumber - 1) * 10;
     const endIndex = startIndex + 10;
-    return allRankings.slice(startIndex, endIndex);
+    const rankings = allRankings.slice(startIndex, endIndex);
+    
+    // If no data available for this group (ranks 21-100), show updation message
+    if (rankings.length === 0) {
+      return [];
+    }
+    
+    return rankings;
   };
 
-  const groups = Array.from({ length: 10 }, (_, i) => i + 1);
+  const groups = Array.from({ length: 10 }, (_, i) => i + 1); // Show all groups 1-10 (ranks 1-100)
 
   return (
     <section id="rankings" className="py-20 bg-black">
@@ -140,45 +147,56 @@ const Rankings = () => {
           </div>
           
           <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead className="bg-gray-800">
-                <tr>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Rank</th>
-                  <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Player</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-800">
-                {getGroupRankings(selectedGroup).map((player) => {
-                  const RankIcon = getRankIcon(player.rank);
-                  return (
-                    <tr key={player.rank} className={`hover:bg-gray-800 transition-colors duration-200}`}>
-                      <td className="px-6 py-4">
-                        <div className="flex items-center space-x-3">
-                          <RankIcon className={`h-5 w-5 ${getRankColor(player.rank)}`} />
-                          <span className={`font-bold text-lg ${getRankColor(player.rank)}`}>
-                            #{player.rank}
-                          </span>
-                        </div>
-                      </td>
-                      <td className="px-6 py-4">
-                        <div className="flex items-center space-x-4">
-                          <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-700 flex-shrink-0">
-                            <img 
-                              src={player.image} 
-                              alt={player.name}
-                              className="w-full h-full object-cover"
-                            />
+            {getGroupRankings(selectedGroup).length > 0 ? (
+              <table className="w-full">
+                <thead className="bg-gray-800">
+                  <tr>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Rank</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Player</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-800">
+                  {getGroupRankings(selectedGroup).map((player) => {
+                    const RankIcon = getRankIcon(player.rank);
+                    return (
+                      <tr key={player.rank} className={`hover:bg-gray-800 transition-colors duration-200}`}>
+                        <td className="px-6 py-4">
+                          <div className="flex items-center space-x-3">
+                            <RankIcon className={`h-5 w-5 ${getRankColor(player.rank)}`} />
+                            <span className={`font-bold text-lg ${getRankColor(player.rank)}`}>
+                              #{player.rank}
+                            </span>
                           </div>
-                          <div>
-                            <div className="text-white font-semibold text-lg">{player.name}</div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-700 flex-shrink-0">
+                              <img 
+                                src={player.image} 
+                                alt={player.name}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            <div>
+                              <div className="text-white font-semibold text-lg">{player.name}</div>
+                            </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            ) : (
+              <div className="flex flex-col items-center justify-center py-16 px-6">
+                <BarChart3 className="h-16 w-16 text-gray-600 mb-4" />
+                <h3 className="text-2xl font-bold text-white mb-2">Updation in Progress</h3>
+                <p className="text-gray-400 text-center max-w-md">
+                  Rankings for positions {(selectedGroup - 1) * 10 + 1}-{selectedGroup * 10} are currently being updated. 
+                  Please check back soon for the latest standings.
+                </p>
+              </div>
+            )}
           </div>
         </div>
         <div className="mt-8 text-center">
