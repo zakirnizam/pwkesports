@@ -49,28 +49,44 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="pt-28 sm:pt-32 mb-8">
           <div className="relative w-24 h-24 sm:w-32 sm:h-32 mx-auto mb-6">
-            {/* Glowing background effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/30 to-green-400/30 rounded-2xl blur-xl animate-pulse"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-400/20 to-green-400/20 rounded-2xl blur-2xl animate-ping"></div>
-            
-            {/* Rotating smoke rings */}
-            <div className="absolute inset-0 animate-spin" style={{ animationDuration: '8s' }}>
-              <div className="absolute top-0 left-1/2 w-1 h-1 bg-emerald-400/40 rounded-full transform -translate-x-1/2"></div>
-              <div className="absolute bottom-0 left-1/2 w-1 h-1 bg-emerald-400/40 rounded-full transform -translate-x-1/2"></div>
-              <div className="absolute left-0 top-1/2 w-1 h-1 bg-emerald-400/40 rounded-full transform -translate-y-1/2"></div>
-              <div className="absolute right-0 top-1/2 w-1 h-1 bg-emerald-400/40 rounded-full transform -translate-y-1/2"></div>
-            </div>
-            
-            {/* Counter-rotating ring */}
-            <div className="absolute inset-2 animate-spin" style={{ animationDuration: '6s', animationDirection: 'reverse' }}>
-              <div className="absolute top-0 left-1/2 w-0.5 h-0.5 bg-green-400/60 rounded-full transform -translate-x-1/2"></div>
-              <div className="absolute bottom-0 left-1/2 w-0.5 h-0.5 bg-green-400/60 rounded-full transform -translate-x-1/2"></div>
-              <div className="absolute left-0 top-1/2 w-0.5 h-0.5 bg-green-400/60 rounded-full transform -translate-y-1/2"></div>
-              <div className="absolute right-0 top-1/2 w-0.5 h-0.5 bg-green-400/60 rounded-full transform -translate-y-1/2"></div>
+            {/* Smoke effect background */}
+            <div className="absolute -inset-8 pointer-events-none">
+              {/* Main smoke clouds */}
+              {[...Array(6)].map((_, i) => (
+                <div
+                  key={i}
+                  className="absolute bg-gradient-to-r from-emerald-400/5 to-green-400/5 rounded-full blur-xl animate-smoke"
+                  style={{
+                    width: `${60 + i * 20}px`,
+                    height: `${60 + i * 20}px`,
+                    left: `${-20 + i * 8}%`,
+                    top: `${-20 + (i % 3) * 15}%`,
+                    animationDelay: `${i * 1.5}s`,
+                    animationDuration: `${8 + i * 2}s`,
+                  }}
+                />
+              ))}
+              
+              {/* Floating particles */}
+              {[...Array(8)].map((_, i) => (
+                <div
+                  key={`particle-${i}`}
+                  className="absolute w-1 h-1 bg-emerald-400/20 rounded-full animate-float"
+                  style={{
+                    left: `${10 + i * 10}%`,
+                    top: `${20 + (i % 4) * 15}%`,
+                    animationDelay: `${i * 0.8}s`,
+                    animationDuration: `${4 + (i % 3)}s`,
+                  }}
+                />
+              ))}
+              
+              {/* Subtle glow */}
+              <div className="absolute inset-0 bg-emerald-400/10 rounded-full blur-2xl animate-pulse"></div>
             </div>
             
             {/* Main logo container */}
-            <div className="relative w-full h-full bg-gray-800 border-4 border-emerald-400 rounded-2xl flex items-center justify-center overflow-hidden shadow-2xl backdrop-blur-sm">
+            <div className="relative w-full h-full bg-gray-800/90 border-2 border-emerald-400/80 rounded-2xl flex items-center justify-center overflow-hidden shadow-2xl backdrop-blur-sm">
             <ImageWithFallback
               src={pwkLogo}
               alt="PWK Esports Logo"
