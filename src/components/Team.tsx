@@ -46,6 +46,7 @@ import {
   Akshay,
   Prince,
   Nizam,
+  Sreenath,
 } from "../images";
 
 const Team = () => {
@@ -59,7 +60,7 @@ const Team = () => {
     ],
     Leaders: [
       { name: "Subin", image: Subin },
-      { name: "Sreenath", image: PwkLogo },
+      { name: "Sreenath", image: Sreenath },
       { name: "Sreejith", image: Sreejith },
       { name: "Hari", image: Hari },
       { name: "Sarath", image: Sarath },
