@@ -64,6 +64,7 @@ const Rankings = () => {
   };
 
   const groups = Array.from({ length: 2 }, (_, i) => i + 1); // Only show groups 1-2 (ranks 1-20)
+  const groups = Array.from({ length: 10 }, (_, i) => i + 1); // Show all groups 1-10 (ranks 1-100)
 
   return (
     <section id="rankings" className="py-20 bg-black">
