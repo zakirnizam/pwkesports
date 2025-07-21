@@ -4,27 +4,42 @@ const Achievements = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: "Division Champions",
-      description: "Winners of the 2024 eFootball Division Championship",
-      year: "2024",
+      title: "FIPT SEASON 01 CHAMPION",
+      description: "Champions of the First International Pro Tournament Season 1",
+      year: "S1",
     },
     {
       icon: Award,
-      title: "Top Clan Ranking",
-      description: "Achieved top 10 clan ranking in global leaderboards",
-      year: "2023",
+      title: "FIPT SEASON 02 2nd Runner up",
+      description: "Second runners-up in the First International Pro Tournament Season 2",
+      year: "S2",
     },
     {
       icon: Target,
-      title: "Tournament Victory",
-      description: "First place in the International eFootball Cup",
-      year: "2024",
+      title: "AKPA Community SHIELD CHAMPION",
+      description: "Winners of the AKPA Community Shield Championship",
+      year: "Shield",
     },
     {
       icon: Users,
-      title: "Community Choice",
-      description: "Voted best esports clan by eFootball community",
-      year: "2023",
+      title: "AKPA Community Champion S3",
+      description: "MANU - AKPA Community Championship Season 3 Winner",
+      year: "S3",
+    },
+  ];
+
+  const individualAchievements = [
+    {
+      icon: Trophy,
+      title: "AKPA Community Champion S4",
+      description: "ANCEL - AKPA Community Championship Season 4 Winner",
+      year: "S4",
+    },
+    {
+      icon: Users,
+      title: "PES DUOS CHAMPIONS (PES WOLVERINE)",
+      description: "FEBIN & ABHI - PES Wolverine Duos Championship Winners",
+      year: "Duos",
     },
   ];
 
@@ -35,24 +50,53 @@ const Achievements = () => {
           <h3 className="text-3xl font-bold text-white text-center mb-12">
             Our Achievements
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {achievements.map((achievement, index) => (
-              <div
-                key={index}
-                className="bg-black p-6 rounded-xl border border-gray-800 hover:border-emerald-400 transition-colors duration-200"
-              >
-                <achievement.icon className="h-10 w-10 text-emerald-400 mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">
-                  {achievement.title}
-                </h4>
-                <p className="text-gray-300 text-sm mb-3">
-                  {achievement.description}
-                </p>
-                <span className="text-emerald-400 font-semibold text-sm">
-                  {achievement.year}
-                </span>
-              </div>
-            ))}
+          
+          {/* Team Achievements */}
+          <div className="mb-12">
+            <h4 className="text-2xl font-semibold text-emerald-400 text-center mb-8">Team Championships</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {achievements.map((achievement, index) => (
+                <div
+                  key={index}
+                  className="bg-black p-6 rounded-xl border border-gray-800 hover:border-emerald-400 transition-colors duration-200"
+                >
+                  <achievement.icon className="h-10 w-10 text-emerald-400 mb-4" />
+                  <h4 className="text-lg font-semibold text-white mb-2">
+                    {achievement.title}
+                  </h4>
+                  <p className="text-gray-300 text-sm mb-3">
+                    {achievement.description}
+                  </p>
+                  <span className="text-emerald-400 font-semibold text-sm">
+                    {achievement.year}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Individual Achievements */}
+          <div>
+            <h4 className="text-2xl font-semibold text-emerald-400 text-center mb-8">Individual Championships</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {individualAchievements.map((achievement, index) => (
+                <div
+                  key={index}
+                  className="bg-black p-6 rounded-xl border border-gray-800 hover:border-emerald-400 transition-colors duration-200"
+                >
+                  <achievement.icon className="h-10 w-10 text-emerald-400 mb-4" />
+                  <h4 className="text-lg font-semibold text-white mb-2">
+                    {achievement.title}
+                  </h4>
+                  <p className="text-gray-300 text-sm mb-3">
+                    {achievement.description}
+                  </p>
+                  <span className="text-emerald-400 font-semibold text-sm">
+                    {achievement.year}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
