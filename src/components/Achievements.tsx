@@ -104,8 +104,3 @@ const Achievements = () => {
   );
 };
 export default Achievements;
-      </div>
-    </section>
-  );
-};
-export default Achievements;
