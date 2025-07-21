@@ -37,7 +37,7 @@ const Achievements = () => {
     },
     {
       icon: Users,
-      title: "PES DUOS CHAMPIONS",
+      title: "PES DUOS CHAMPIONS (PES WOLVERINE)",
       description: "FEBIN & ABHI - PES Wolverine Duos Championship Winners",
       year: "Duos",
     },
