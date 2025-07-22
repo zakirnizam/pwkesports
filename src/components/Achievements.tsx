@@ -4,19 +4,19 @@ const Achievements = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: "FIPT SEASON 01 CHAMPION",
-      description: "Champions of the First International Pro Tournament Season 1",
+      title: "FIPT Season 01 Champion",
+      description: "Champions of the Fed. Int'l. de Pes Tourneys",
       year: "S1",
     },
     {
       icon: Award,
-      title: "FIPT SEASON 02 2nd Runner up",
-      description: "Second runners-up in the First International Pro Tournament Season 2",
+      title: "FIPT Season 02 2nd Runner Up",
+      description: "Second runners-up in the Fed. Int'l. de Pes Tourneys ",
       year: "S2",
     },
     {
       icon: Target,
-      title: "AKPA Community SHIELD CHAMPION",
+      title: "AKPA Community Shield Champion",
       description: "Winners of the AKPA Community Shield Championship",
       year: "Shield",
     },
@@ -34,8 +34,8 @@ const Achievements = () => {
     },
     {
       icon: Users,
-      title: "PES DUOS CHAMPIONS (PES WOLVERINE)",
-      description: "FEBIN & ABHI - PES Wolverine Duos Championship Winners",
+      title: "PES Duos Champions (Pes Wolverine)",
+      description: "FEBIN & ABHI - Duos Championship Winners",
       year: "Duos",
     },
   ];
