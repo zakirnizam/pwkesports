@@ -6,10 +6,12 @@ import Rankings from './components/Rankings';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Achievements from './components/Achievements';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="bg-black text-white">
+      <ScrollToTop/>
       <Header />
       <Hero />
       <About />
