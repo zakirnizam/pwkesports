@@ -6,6 +6,7 @@ import {
   Gamepad2,
   Award,
   RocketIcon,
+  Handshake,
 } from "lucide-react";
 import ImageWithFallback from './ImageWithFallback';
 
@@ -111,7 +112,7 @@ const Team = () => {
       case "Star Player's":
         return Gamepad2;
       case "Coordinators":
-        return RocketIcon;
+        return Handshake;
       case "Pioneers":
         return Award;
       default:
