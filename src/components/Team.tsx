@@ -84,7 +84,7 @@ const Team = () => {
       { name: "Sheheer", image: Sheheer },
       { name: "Unni", image: Unni },
     ],
-    "Next Gen": [
+    "Coordinators": [
       { name: "Nizam", image: Nizam },
       { name: "Juju", image: Juju },
       { name: "Abin", image: Abin },
@@ -110,7 +110,7 @@ const Team = () => {
         return Crown;
       case "Star Player's":
         return Gamepad2;
-      case "Next Gen":
+      case "Coordinators":
         return RocketIcon;
       case "Pioneers":
         return Award;
@@ -127,7 +127,7 @@ const Team = () => {
         return "text-yellow-400 border-yellow-400 bg-yellow-400/10";
       case "Star Player's":
         return "text-emerald-400 border-emerald-400 bg-emerald-400/10";
-      case "Next Gen":
+      case "Coordinators":
         return "text-blue-400 border-blue-400 bg-blue-400/10";
       case "Pioneers":
         return "text-orange-400 border-orange-400 bg-orange-400/10";
@@ -144,7 +144,7 @@ const Team = () => {
         return "bg-yellow-600 text-white border-yellow-600";
       case "Star Player's":
         return "bg-emerald-600 text-white border-emerald-600";
-      case "Next Gen":
+      case "Coordinators":
         return "bg-blue-600 text-white border-blue-600";
       case "Pioneers":
         return "bg-orange-600 text-white border-orange-600";
