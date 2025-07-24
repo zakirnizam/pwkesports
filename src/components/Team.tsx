@@ -5,7 +5,6 @@ import {
   Star,
   Gamepad2,
   Award,
-  RocketIcon,
   Handshake,
 } from "lucide-react";
 import ImageWithFallback from './ImageWithFallback';

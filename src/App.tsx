@@ -7,8 +7,14 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Achievements from './components/Achievements';
 import ScrollToTop from './components/ScrollToTop';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    const handleContextMenu = (e: MouseEvent) => e.preventDefault();
+    document.addEventListener("contextmenu", handleContextMenu);
+    return () => document.removeEventListener("contextmenu", handleContextMenu);
+  }, []);
   return (
     <div className="bg-black text-white">
       <ScrollToTop/>
