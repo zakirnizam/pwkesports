@@ -58,8 +58,6 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><a href="#contact" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Join Us</a></li>
               <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">WhatsApp Group</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Tournaments</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Rules & Guidelines</a></li>
             </ul>
           </div>
 
