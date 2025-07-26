@@ -52,3 +52,7 @@
 .animate-smoke {
   animation: smoke 4s ease-out infinite;
 }
+
+html {
+  scroll-behavior: smooth;
+}
