@@ -203,7 +203,7 @@ const Team = () => {
                     <ImageWithFallback
                       src={player.image}
                       alt={player.name}
-                      className="w-full h-48 object-cover hover:scale-110 transition-transform duration-300"
+                      className="w-full h-48 object-cover"
                     />
                     <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-sm rounded-full p-2">
                       <CategoryIcon
