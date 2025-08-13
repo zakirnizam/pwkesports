@@ -83,10 +83,23 @@
       }
     </script>
   </head>
-  <body>
+  <body
+    oncopy="return false"
+    onselectstart="return false"
+    onmousedown="return false"
+  >
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
+      document.addEventListener("copy", function (e) {
+        e.preventDefault();
+      });
+      document.addEventListener("selectstart", function (e) {
+        e.preventDefault();
+      });
+      document.addEventListener("mousedown", function (e) {
+        e.preventDefault();
+      });
       window.addEventListener("scroll", () => {
         const scrolled =
           (window.scrollY + window.innerHeight) / document.body.scrollHeight;
