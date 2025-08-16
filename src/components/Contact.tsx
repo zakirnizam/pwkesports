@@ -20,16 +20,8 @@ const Contact = () => {
     setShowForm(false);
   };
 
-  const toggleForm = () => {
-    setShowForm(prev => !prev);
-  };
-
-  const closeForm = () => {
-    setShowForm(false);
-  };
-
   return (
-    <section id="contact" className="py-20 bg-gray-900 relative">
+    <section id="contact" className="py-20 bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">Join PWK Esports</h2>
@@ -50,12 +42,12 @@ const Contact = () => {
                 Join our WhatsApp group for real-time communication, match coordination, and team updates.
               </p>
               <button
-                onClick={toggleForm}
+                onClick={() => setShowForm(true)}
                 className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 inline-flex items-center space-x-2"
                 type="button"
               >
                 <MessageSquare className="h-5 w-5" />
-                <span>{showForm ? 'Close Form' : 'Join WhatsApp'}</span>
+                <span>Join WhatsApp</span>
               </button>
             </div>
 
@@ -88,7 +80,7 @@ const Contact = () => {
           {/* Backdrop */}
           <div 
             className="absolute inset-0 bg-black/80 backdrop-blur-sm"
-            onClick={closeForm}
+            onClick={() => setShowForm(false)}
           />
           
           {/* Modal content */}
@@ -96,8 +88,8 @@ const Contact = () => {
             <div className="flex justify-between items-center mb-6">
               <h3 className="text-2xl font-bold text-white">Join WhatsApp Group</h3>
               <button
-                onClick={closeForm}
-                className="text-gray-400 hover:text-white transition-colors duration-200 p-1"
+                onClick={() => setShowForm(false)}
+                className="text-gray-400 hover:text-white transition-colors duration-200"
                 aria-label="Close form"
                 type="button"
               >
@@ -159,7 +151,7 @@ const Contact = () => {
               <div className="flex space-x-3 pt-4">
                 <button
                   type="button"
-                  onClick={closeForm}
+                  onClick={() => setShowForm(false)}
                   className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
                 >
                   Cancel
