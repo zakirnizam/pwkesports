@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Trophy, Medal, Award, Crown, BarChart3 } from 'lucide-react';
-import { Abhi, Abin, Adhi, Alen, Alex, Anvar, Asaf, AthulVok, Febin, Grizzy, Jibin, Mirfash, Murshid, Prince, Rizwan, Sheheer, Shiraz, Sohal, Sreejith, Sulthan, Nizam, PwkLogo, Varun, Bee, Unni, Ajin, Sarath, Gokul, Subin } from '../images';
+import { Abhi, Abin, Adhi, Alen, Alex, Anvar, Asaf, AthulVok, Febin, Grizzy, Jibin, Mirfash, Murshid, Prince, Rizwan, Sheheer, Shiraz, Sohal, Sreejith, Sulthan, Nizam, PwkLogo, Varun, Bee, Unni, Ajin, Sarath, Gokul, Subin, Sreenath, AthulPD, Hari, Neeraj } from '../images';
 import ImageWithFallback from './ImageWithFallback';
 
 const Rankings = () => {
@@ -57,15 +57,15 @@ const allRankings = [
   { rank: 47, name: 'HAFEZ', rating: 206, image: PwkLogo },
   { rank: 48, name: 'PRINCE', rating: 205, image: Prince },
   { rank: 49, name: 'MB', rating: 203, image: PwkLogo },
-  { rank: 50, name: 'NEERAJ', rating: 201, image: PwkLogo },
+  { rank: 50, name: 'NEERAJ', rating: 201, image: Neeraj },
   { rank: 51, name: 'FEBIN', rating: 200, image: Febin },
   { rank: 52, name: 'BILAL', rating: 190, image: PwkLogo },
   { rank: 53, name: 'MISHAL', rating: 185, image: PwkLogo },
   { rank: 54, name: 'SOHAL', rating: 172, image: Sohal },
   { rank: 55, name: 'DILSHAD', rating: 168, image: PwkLogo },
-  { rank: 56, name: 'SREENATH', rating: 162, image: Sreejith },
-  { rank: 57, name: 'ATHUL PD', rating: 151, image: Shiraz },
-  { rank: 58, name: 'HARI', rating: 138, image: PwkLogo },
+  { rank: 56, name: 'SREENATH', rating: 162, image: Sreenath },
+  { rank: 57, name: 'ATHUL PD', rating: 151, image: AthulPD },
+  { rank: 58, name: 'HARI', rating: 138, image: Hari },
   { rank: 59, name: 'ASLAM', rating: 134, image: PwkLogo },
   { rank: 60, name: 'SABIN', rating: 129, image: PwkLogo },
   { rank: 61, name: 'VYSHNAV', rating: 124, image: PwkLogo },
