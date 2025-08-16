@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Achievements from './components/Achievements';
 import ScrollToTop from './components/ScrollToTop';
+import NewsCarousel from './components/NewsCarousel';
 import { useEffect } from 'react';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Hero />
       <About />
       <Achievements />
+      <NewsCarousel />
       <Team />
       <Rankings />
       <Contact />

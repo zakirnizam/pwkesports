@@ -42,6 +42,9 @@ import AcchuzImg from './Acchooz.jpg';
 import NizamImg from './Nizam.jpg';
 import SreenathImg from './Sreenath.png';
 import SyamImg from './Syam.jpg';
+import DistWinnersImg from './DistWinners.png';
+import DistRunnersImg from './DistRunners.png';
+import DistThirdImg from './DistThird.png';
 
 // Export with fallback handling
 export const PwkLogo = PwkLogoImg;
@@ -87,4 +90,7 @@ export const Acchuz = AcchuzImg;
 export const Nizam = NizamImg;
 export const Sreenath = SreenathImg;
 export const Syam = SyamImg;
+export const DistWinners = DistWinnersImg;
+export const DistRunners = DistRunnersImg;
+export const DistThird = DistThirdImg;
 

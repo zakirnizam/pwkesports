@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Trophy, Users, BarChart3, Info, Phone, Medal } from 'lucide-react';
+import { Menu, X, Trophy, Users, BarChart3, Info, Phone, Medal, Newspaper } from 'lucide-react';
 import pwkLogo from '../images/pwklogo.jpg';
 import ImageWithFallback from './ImageWithFallback';
 
@@ -10,6 +10,7 @@ const Header = () => {
     { name: 'Home', href: '#home', icon: Trophy },
     { name: 'About', href: '#about', icon: Info },
     { name: 'Achievements', href: '#achievements', icon: Medal },
+    { name: 'News', href: '#news', icon: Newspaper },
     { name: 'Team', href: '#team', icon: Users },
     { name: 'Rankings', href: '#rankings', icon: BarChart3 },
     { name: 'Contact', href: '#contact', icon: Phone },

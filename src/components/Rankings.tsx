@@ -1,34 +1,115 @@
 import { useState } from 'react';
 import { Trophy, Medal, Award, Crown, BarChart3 } from 'lucide-react';
-import { Abhi, Abin, Adhi, Alen, Alex, Anvar, Asaf, AthulVok, Febin, Grizzy, Jibin, Mirfash, Murshid, Prince, Rizwan, Sheheer, Shiraz, Sohal, Sreejith, Sulthan } from '../images';
+import { Abhi, Abin, Adhi, Alen, Alex, Anvar, Asaf, AthulVok, Febin, Grizzy, Jibin, Mirfash, Murshid, Prince, Rizwan, Sheheer, Shiraz, Sohal, Sreejith, Sulthan, Nizam, PwkLogo, Varun, Bee, Unni, Ajin, Sarath, Gokul, Subin } from '../images';
 import ImageWithFallback from './ImageWithFallback';
 
 const Rankings = () => {
   const [selectedGroup, setSelectedGroup] = useState(1);
 
   // Hardcoded rankings data for top 100 players
- const allRankings = [
-  { rank: 1, name: 'Grizzy', rating: 985, image: Grizzy },
-  { rank: 2, name: 'Shiraz', rating: 978, image: Shiraz },
-  { rank: 3, name: 'Murshid', rating: 972, image: Murshid },
-  { rank: 4, name: 'Abin', rating: 968, image: Abin },
-  { rank: 5, name: 'Sohal', rating: 965, image: Sohal },
-  { rank: 6, name: 'Febin', rating: 962, image: Febin },
-  { rank: 7, name: 'Sheheer', rating: 958, image: Sheheer },
-  { rank: 8, name: 'Abhi', rating: 955, image: Abhi },
-  { rank: 9, name: 'Anvar', rating: 952, image: Anvar },
-  { rank: 10, name: 'Sreejith', rating: 949, image: Sreejith },
-  { rank: 11, name: 'Sulthan', rating: 946, image: Sulthan },
-  { rank: 12, name: 'Asaf', rating: 943, image: Asaf },
-  { rank: 13, name: 'Rizwan', rating: 940, image: Rizwan },
-  { rank: 14, name: 'Alen', rating: 937, image: Alen },
-  { rank: 15, name: 'Athul VOK', rating: 934, image: AthulVok },
-  { rank: 16, name: 'Adhi', rating: 931, image: Adhi },
-  { rank: 17, name: 'Jibin', rating: 928, image: Jibin },
-  { rank: 18, name: 'Alex', rating: 925, image: Alex },
-  { rank: 19, name: 'Prince', rating: 922, image: Prince },
-  { rank: 20, name: 'Mirfash', rating: 919, image: Mirfash },
-  ];
+const allRankings = [
+  { rank: 1, name: 'SREEJITH', rating: 874, image: Sreejith },
+  { rank: 2, name: 'GRIZZY', rating: 815, image: Grizzy },
+  { rank: 3, name: 'SHIRAZ', rating: 737, image: Shiraz },
+  { rank: 4, name: 'MURSHID', rating: 658, image: Murshid },
+  { rank: 5, name: 'ALEN', rating: 624, image: Alen },
+  { rank: 6, name: 'VOK', rating: 582, image: AthulVok },
+  { rank: 7, name: 'ANVAR', rating: 572, image: Anvar },
+  { rank: 8, name: 'BASIM', rating: 557, image: PwkLogo },
+  { rank: 9, name: 'ASAF', rating: 531, image: Asaf },
+  { rank: 10, name: 'VARUN', rating: 503, image: Varun },
+  { rank: 11, name: 'ALEX', rating: 462, image: Alex },
+  { rank: 12, name: 'JIBIN', rating: 452, image: Jibin },
+  { rank: 13, name: 'ABHI', rating: 450, image: Abhi },
+  { rank: 14, name: 'SULTHAN', rating: 446, image: Sulthan },
+  { rank: 15, name: 'ABRAR', rating: 438, image: PwkLogo },
+  { rank: 16, name: 'SHEHEER', rating: 437, image: Sheheer },
+  { rank: 17, name: 'AFUVE', rating: 435, image: PwkLogo },
+  { rank: 18, name: 'BEE', rating: 429, image: Bee },
+  { rank: 19, name: 'ABIN', rating: 418, image: Abin },
+  { rank: 20, name: 'ZAIN', rating: 417, image: PwkLogo },
+  { rank: 21, name: 'GHOST', rating: 415, image: PwkLogo },
+  { rank: 22, name: 'NAVEEN', rating: 380, image: PwkLogo },
+  { rank: 23, name: 'ADHIL', rating: 377, image: PwkLogo },
+  { rank: 24, name: 'UNNI', rating: 375, image: Unni },
+  { rank: 25, name: 'AJIN', rating: 366, image: Ajin },
+  { rank: 26, name: 'MIRFASH', rating: 364, image: Mirfash },
+  { rank: 27, name: 'ROCKY', rating: 363, image: PwkLogo },
+  { rank: 28, name: 'AFLAH', rating: 356, image: PwkLogo },
+  { rank: 29, name: 'PRANAV PR', rating: 353, image: PwkLogo },
+  { rank: 30, name: 'GOKUL JS', rating: 345, image: PwkLogo },
+  { rank: 31, name: 'NIZAM', rating: 308, image: Nizam },
+  { rank: 32, name: 'RIZWAN', rating: 307, image: Rizwan },
+  { rank: 33, name: 'ALFIN', rating: 306, image: PwkLogo },
+  { rank: 34, name: 'AKASH', rating: 304, image: PwkLogo },
+  { rank: 35, name: 'RAM', rating: 297, image: PwkLogo },
+  { rank: 36, name: 'AMEEN', rating: 289, image: PwkLogo },
+  { rank: 37, name: 'ARJU', rating: 270, image: PwkLogo },
+  { rank: 38, name: 'SHAMAL', rating: 252, image: PwkLogo },
+  { rank: 39, name: 'ADHI', rating: 252, image: Adhi },
+  { rank: 40, name: 'AFNAS', rating: 247, image: PwkLogo },
+  { rank: 41, name: 'BIPIN', rating: 223, image: PwkLogo },
+  { rank: 42, name: 'KAUSHIK', rating: 223, image: PwkLogo },
+  { rank: 43, name: 'SARATH', rating: 220, image: Sarath },
+  { rank: 44, name: 'SHABITH', rating: 219, image: PwkLogo },
+  { rank: 45, name: 'GOKUL', rating: 215, image: Gokul },
+  { rank: 46, name: 'SACHIN', rating: 213, image: PwkLogo },
+  { rank: 47, name: 'HAFEZ', rating: 206, image: PwkLogo },
+  { rank: 48, name: 'PRINCE', rating: 205, image: Prince },
+  { rank: 49, name: 'MB', rating: 203, image: PwkLogo },
+  { rank: 50, name: 'NEERAJ', rating: 201, image: PwkLogo },
+  { rank: 51, name: 'FEBIN', rating: 200, image: Febin },
+  { rank: 52, name: 'BILAL', rating: 190, image: PwkLogo },
+  { rank: 53, name: 'MISHAL', rating: 185, image: PwkLogo },
+  { rank: 54, name: 'SOHAL', rating: 172, image: Sohal },
+  { rank: 55, name: 'DILSHAD', rating: 168, image: PwkLogo },
+  { rank: 56, name: 'SREENATH', rating: 162, image: Sreejith },
+  { rank: 57, name: 'ATHUL PD', rating: 151, image: Shiraz },
+  { rank: 58, name: 'HARI', rating: 138, image: PwkLogo },
+  { rank: 59, name: 'ASLAM', rating: 134, image: PwkLogo },
+  { rank: 60, name: 'SABIN', rating: 129, image: PwkLogo },
+  { rank: 61, name: 'VYSHNAV', rating: 124, image: PwkLogo },
+  { rank: 62, name: 'SATHWIK', rating: 122, image: PwkLogo },
+  { rank: 63, name: 'SHIJIN', rating: 118, image: PwkLogo },
+  { rank: 64, name: 'ALWIN', rating: 102, image: PwkLogo },
+  { rank: 65, name: 'NEVIN', rating: 101, image: PwkLogo },
+  { rank: 66, name: 'FAZIL', rating: 100, image: PwkLogo },
+  { rank: 67, name: 'VIVEK', rating: 97, image: PwkLogo },
+  { rank: 68, name: 'RIZWAN VP', rating: 73, image: PwkLogo },
+  { rank: 69, name: 'ANZIL', rating: 69, image: PwkLogo },
+  { rank: 70, name: 'SUBIN', rating: 68, image: Subin },
+  { rank: 71, name: 'SREEJITH P', rating: 67, image: PwkLogo },
+  { rank: 72, name: 'RISHORE', rating: 66, image: PwkLogo },
+  { rank: 73, name: 'ALI', rating: 57, image: PwkLogo },
+  { rank: 74, name: 'APPUTTAN', rating: 55, image: PwkLogo },
+  { rank: 75, name: 'ROHIT', rating: 53, image: PwkLogo },
+  { rank: 76, name: 'ABHISHEK', rating: 43, image: PwkLogo },
+  { rank: 77, name: 'ANTO', rating: 38, image: PwkLogo },
+  { rank: 78, name: 'DEVADOOTH', rating: 28, image: PwkLogo },
+  { rank: 79, name: 'AFTHAB', rating: 15, image: PwkLogo },
+  { rank: 80, name: 'MANU', rating: -15, image: PwkLogo },
+  { rank: 81, name: 'ZIDAN', rating: -23, image: PwkLogo },
+  { rank: 82, name: 'AMAL08', rating: -25, image: PwkLogo },
+  { rank: 83, name: 'KB', rating: -33, image: PwkLogo },
+  { rank: 84, name: 'DANI', rating: -38, image: PwkLogo },
+  { rank: 85, name: 'DECRUZ', rating: -40, image: PwkLogo },
+  { rank: 86, name: 'SHABEER', rating: -41, image: PwkLogo },
+  { rank: 87, name: 'RANEESH', rating: -46, image: PwkLogo },
+  { rank: 88, name: 'AJMAL', rating: -47, image: PwkLogo },
+  { rank: 89, name: 'VIZ', rating: -47, image: PwkLogo },
+  { rank: 90, name: 'PRTHVI', rating: -54, image: PwkLogo },
+  { rank: 91, name: 'RICHARD', rating: -55, image: PwkLogo },
+  { rank: 92, name: 'ANCEL', rating: -65, image: PwkLogo },
+  { rank: 93, name: 'NIKHIL', rating: -67, image: PwkLogo },
+  { rank: 94, name: 'SHABAZ', rating: -70, image: PwkLogo },
+  { rank: 95, name: 'ARSHAD  b', rating: -80, image: PwkLogo },
+  { rank: 96, name: 'ALAN S', rating: -92, image: PwkLogo },
+  { rank: 97, name: 'SOORAJ', rating: -105, image: PwkLogo },
+  { rank: 98, name: 'NADHEEM', rating: -107, image: PwkLogo },
+  { rank: 99, name: 'NUZEER', rating: -112, image: PwkLogo },
+  { rank: 100, name: 'SURAJ', rating: -118, image: PwkLogo },
+];
+
   
   const getRankIcon = (rank: number) => {
     if (rank === 1) return Crown;
@@ -44,12 +125,14 @@ const Rankings = () => {
     return 'text-gray-400';
   };
 
-  // const getRatingColor = (rating: number) => {
-  //   if (rating >= 950) return 'text-yellow-400';
-  //   if (rating >= 900) return 'text-emerald-400';
-  //   if (rating >= 850) return 'text-green-400';
-  //   return 'text-gray-400';
-  // };
+  const getRatingColor = (rating: number) => {
+  if (rating >= 850) return 'text-yellow-400'; 
+  if (rating >= 700) return 'text-green-400'; 
+  if (rating >= 500) return 'text-purple-400'; 
+  if (rating >= 300) return 'text-cyan-400'; 
+  if (rating >= 0) return 'text-orange-400'; 
+  return 'text-red-500'; 
+  };
 
   const getGroupRankings = (groupNumber: number) => {
     const startIndex = (groupNumber - 1) * 10;
@@ -115,6 +198,7 @@ const Rankings = () => {
                   <tr>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Rank</th>
                     <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Player</th>
+                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-300">Rating</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-800">
@@ -134,7 +218,7 @@ const Rankings = () => {
                           <div className="flex items-center space-x-4">
                             <div className="w-16 h-16 rounded-lg overflow-hidden border-2 border-gray-700 flex-shrink-0">
                               <ImageWithFallback
-                                src={player.image} 
+                                src={player.image}
                                 alt={player.name}
                                 className="w-full h-full object-cover"
                               />
@@ -143,6 +227,9 @@ const Rankings = () => {
                               <div className="text-white font-semibold text-lg">{player.name}</div>
                             </div>
                           </div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className={`font-bold text-lg ${getRatingColor(player.rating)}`}>{player.rating}</span>
                         </td>
                       </tr>
                     );
