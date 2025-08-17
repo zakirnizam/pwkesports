@@ -45,6 +45,7 @@ import SyamImg from './Syam.jpg';
 import DistWinnersImg from './DistWinners.png';
 import DistRunnersImg from './DistRunners.png';
 import DistThirdImg from './DistThird.png';
+import news1Img from './news1.jpg';
 
 // Export with fallback handling
 export const PwkLogo = PwkLogoImg;
@@ -93,4 +94,5 @@ export const Syam = SyamImg;
 export const DistWinners = DistWinnersImg;
 export const DistRunners = DistRunnersImg;
 export const DistThird = DistThirdImg;
+export const News1 = news1Img;
 

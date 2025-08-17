@@ -2,13 +2,6 @@ import { MessageSquare, Instagram } from 'lucide-react';
 import pwkLogo from '../images/pwklogo.jpg';
 import ImageWithFallback from './ImageWithFallback';
 
-const phoneNumber = "919037122605";
-const message = "Hi! I’m an active eFootball player looking to join a competitive clan. Is PWK eSports recruiting new players?";
-const encodedMessage = encodeURIComponent(message);
-const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-
-
 const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-800">
@@ -31,7 +24,7 @@ const Footer = () => {
               Champions of the Virtual Pitch. Join the most competitive eFootball esports clan and dominate the digital leagues.
             </p>
             <div className="flex space-x-4">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">
+              <a href="#contact" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">
                 <MessageSquare className="h-5 w-5" />
               </a>
               <a href="https://instagram.com/pwkesports" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">
@@ -58,7 +51,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Community</h3>
             <ul className="space-y-2">
               <li><a href="#contact" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">Join Us</a></li>
-              <li><a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">WhatsApp Group</a></li>
+              <li><a href='#contact' rel="noopener noreferrer" className="text-gray-400 hover:text-emerald-400 transition-colors duration-200">WhatsApp Group</a></li>
             </ul>
           </div>
 

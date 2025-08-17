@@ -1,8 +1,9 @@
-import { DistWinners,DistRunners,DistThird } from '../images';
+import { DistWinners,DistRunners,DistThird, News1 } from '../images';
 import '../index.css';
 
 
 const newsImages: string[] = [
+News1,
 DistWinners,
 DistRunners,
 DistThird,

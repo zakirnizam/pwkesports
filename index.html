@@ -83,22 +83,17 @@
       }
     </script>
   </head>
-  <body
-    oncopy="return false"
-    onselectstart="return false"
-    onmousedown="return false"
-  >
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      document.addEventListener("copy", function (e) {
-        e.preventDefault();
-      });
-      document.addEventListener("selectstart", function (e) {
-        e.preventDefault();
-      });
-      document.addEventListener("mousedown", function (e) {
-        e.preventDefault();
+      // Only prevent copy/select/mousedown on images
+      document.querySelectorAll('img').forEach(img => {
+        img.addEventListener('copy', e => e.preventDefault());
+        img.addEventListener('selectstart', e => e.preventDefault());
+        img.addEventListener('mousedown', e => e.preventDefault());
+        img.addEventListener('contextmenu', e => e.preventDefault());
+        img.setAttribute('draggable', 'false');
       });
       window.addEventListener("scroll", () => {
         const scrolled =
