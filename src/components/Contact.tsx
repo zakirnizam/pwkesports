@@ -26,6 +26,8 @@ type PWKSurveyForm = {
   youtube: string;
   editing: string;
   nonPlaying: string;
+  instaFollower: string;
+  instaId: string;
   reason: string;
   expect: string;
   ask: string;
@@ -66,7 +68,7 @@ const editingOptions = [
 const Contact = () => {
   const [showForm, setShowForm] = useState(false);
   const { handleInputChange } = useAutoCapitalize();
-  const { register, handleSubmit, reset, control, formState: { errors } } = useForm<PWKSurveyForm>({
+  const { register, handleSubmit, reset, control, watch, formState: { errors } } = useForm<PWKSurveyForm>({
     defaultValues: {
       name: "",
       nationality: "",
@@ -82,11 +84,15 @@ const Contact = () => {
       youtube: "",
       editing: "",
       nonPlaying: "",
+      instaFollower: "",
+      instaId: "",
       reason: "",
       expect: "",
       ask: "",
     },
   });
+
+  const instaFollowerValue = watch("instaFollower");
 
     // Refs for focusing fields on error
   const nameRef = useRef<HTMLInputElement>(null);
@@ -119,6 +125,8 @@ const Contact = () => {
       `\nHighest Division Ranking: ${cap(data.division)}` +
       `\nEnglish Proficiency: ${cap(data.english)}` +
       `\nWill participate in tournaments: ${cap(data.tournaments)}` +
+      `\nFollower of Insta page: ${cap(data.instaFollower)}` +
+      (data.instaFollower === 'Yes' ? `\nInsta ID: instagram.com/${(data.instaId)}` : "") +
       "\n\n🔹 *Clan Commitment*" +
       `\nPart of other Kerala clan: ${cap(data.otherClan)}` +
       `\nWilling for trial/full-time: ${cap(data.willingTrial)}` +
@@ -353,6 +361,37 @@ const Contact = () => {
                       <span className="text-red-500 text-sm block mt-1">{errors.tournaments.message}</span>
                     )}
                   </div>
+                  <div>
+                    <label className="block text-gray-300 font-semibold mb-2">
+                      Are you a follower of our Insta page?
+                    </label>
+                    <Controller
+                      name="instaFollower"
+                      control={control}
+                      render={({ field: { onChange, value } }) => (
+                        <CustomDropdown
+                          options={yesNoOptions}
+                          value={value}
+                          onChange={onChange}
+                          placeholder="Select Yes or No"
+                        />
+                      )}
+                    />
+                  </div>
+                  {instaFollowerValue === 'Yes' && (
+                    <div>
+                      <label className="block text-gray-300 font-semibold mb-2">
+                        If yes, mention your Insta ID
+                      </label>
+                      <input
+                        type="text"
+                        {...register("instaId")}
+                        autoComplete="off"
+                        className="w-full px-3 py-2 border border-emerald-500 bg-gray-800 text-white rounded-lg focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400 focus:ring-opacity-20 transition-all duration-200"
+                        placeholder="Your Instagram ID"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
 
