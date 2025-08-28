@@ -8,7 +8,10 @@ import Footer from './components/Footer';
 import Achievements from './components/Achievements';
 import ScrollToTop from './components/ScrollToTop';
 import NewsCarousel from './components/NewsCarousel';
+import Results from './components/Results';
+import TournamentResult from './components/TournamentResult';
 import { useEffect } from 'react';
+import { Routes, Route, } from 'react-router-dom';
 
 function App() {
   useEffect(() => {
@@ -16,7 +19,8 @@ function App() {
     document.addEventListener("contextmenu", handleContextMenu);
     return () => document.removeEventListener("contextmenu", handleContextMenu);
   }, []);
-  return (
+
+  const MainContent = () => (
     <div className="bg-black text-white">
       <ScrollToTop/>
       <Header />
@@ -29,6 +33,14 @@ function App() {
       <Contact />
       <Footer />
     </div>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={<MainContent />} />
+      <Route path="/results" element={<Results />} />
+      <Route path="/results/:tournamentId" element={<TournamentResult />} />
+    </Routes>
   );
 }
 

@@ -1,5 +1,7 @@
+
 import { DistWinners,DistRunners,DistThird, News1 } from '../images';
 import '../index.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const newsImages: string[] = [
@@ -10,6 +12,7 @@ DistThird,
 ];
 
 const NewsCarousel = () => {
+  const navigate = useNavigate();
   const length = newsImages.length;
 
   if (!Array.isArray(newsImages) || length === 0) {
@@ -34,6 +37,14 @@ const NewsCarousel = () => {
               draggable={false}
             />
           ))}
+        </div>
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => navigate('/results')}
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-colors duration-200"
+          >
+            Go to Results
+          </button>
         </div>
       </div>
     </section>

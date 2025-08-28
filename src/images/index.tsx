@@ -87,6 +87,11 @@ import DistRunnersImg from './DistRunners.png';
 import DistThirdImg from './DistThird.png';
 import news1Img from './news1.jpg';
 
+// Teams 
+import AllapuzhaImg from './alappuzha.jpg';
+import ErnakulamImg from './ekmtitans.jpg';
+import DarkTriadImg from './darktriad.jpg';
+
 // Export with fallback handling
 export const PwkLogo = PwkLogoImg;
 export const Grizzy = GrizzyImg;
@@ -179,3 +184,7 @@ export const DistRunners = DistRunnersImg;
 export const DistThird = DistThirdImg;
 export const News1 = news1Img;
 
+//Team logos
+export const AlappuzhaFC = AllapuzhaImg;
+export const ErnakulamFC = ErnakulamImg;
+export const DarkTriad = DarkTriadImg;
