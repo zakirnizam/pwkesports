@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 import NewsCarousel from './components/NewsCarousel';
 import Results from './components/Results';
 import TournamentResult from './components/TournamentResult';
+import Shop from './pages/Shop';
 import { useEffect } from 'react';
 import { Routes, Route, } from 'react-router-dom';
 
@@ -40,6 +41,7 @@ function App() {
       <Route path="/" element={<MainContent />} />
       <Route path="/results" element={<Results />} />
       <Route path="/results/:tournamentId" element={<TournamentResult />} />
+      <Route path="/shop" element={<Shop />} />
     </Routes>
   );
 }
