@@ -87,6 +87,8 @@ import DistRunnersImg from './DistRunners.png';
 import DistThirdImg from './DistThird.png';
 import news1Img from './news1.jpg';
 import news2Img from './AbhiRanking.jpg';
+import news3Img from './SulthanRanking.jpeg';
+
 
 // Teams 
 import AllapuzhaImg from './alappuzha.jpg';
@@ -185,6 +187,7 @@ export const DistRunners = DistRunnersImg;
 export const DistThird = DistThirdImg;
 export const News1 = news1Img;
 export const News2 = news2Img;
+export const News3 = news3Img; 
 
 //Team logos
 export const AlappuzhaFC = AllapuzhaImg;
