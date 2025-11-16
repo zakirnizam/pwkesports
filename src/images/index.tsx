@@ -82,9 +82,9 @@ import AlwinImg from './Alwin.jpg'
 
 
 //News Images
-import DistWinnersImg from './DistWinners.png';
+import DistWinnersImg from './distWinners.png';
 import DistRunnersImg from './DistRunners.png';
-import DistThirdImg from './DistThird.png';
+import DistThirdImg from './distThird.png';
 import news1Img from './news1.jpg';
 import news2Img from './AbhiRanking.jpg';
 import news3Img from './SulthanRanking.jpeg';
