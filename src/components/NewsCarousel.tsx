@@ -1,10 +1,11 @@
 
-import { DistWinners,DistRunners,DistThird, News1, News2, News3 } from '../images';
+import { DistWinners,DistRunners,DistThird, News1, News2, News3, News4 } from '../images';
 import '../index.css';
 import { useNavigate } from 'react-router-dom';
 
 
 const newsImages: string[] = [
+News4,
 News3,
 News2,
 News1,
